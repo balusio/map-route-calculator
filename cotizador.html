@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>HOME | MAPS TEST ROUTE GENERATOR</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="index, follow" name="robots">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+    <link href="fonts/fonts.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCycUcvtx4s0vJlzdCYrgKu7MBALbW8lhw&signed_in=true&libraries=places&callback=initMap" defer></script>
+    <style>
+
+    </style>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="arrow"></div>
+    <div class="routes">
+        <div class="tabs">
+            <div class="tab-single active" data-toggle="cliente">Cliente</div>
+            <div class="tab-single" data-toggle="nocliente">No Cliente</div>
+        </div>
+        <h3>¡Cotizá Ahora!</h3>
+        <form action="" id='form_map'>
+
+            <div class="toSend" >
+                <div class="first-data">
+                    <div class="holder-input half" id="typeUser" name="typeUser">
+                        <input type="hidden" id="deftypeUser" value="empresa">
+                        <span class="empresa"></span>
+                        <input type="text" class="required" name="empresa" placeholder="EMPRESA" />
+                    </div>
+
+                    <div class="holder-input half">
+                        <span  class="email"></span>
+                        <input type="text" class="required email" placeholder="email">
+                    </div>
+                    <div class="holder-input half">
+                        <span  class="fecha"></span>
+                        <input type="text" class="required" name="" id="dateInput" placeholder="FECHA">
+                    </div>
+                    <div class="holder-input half">
+                    <span  class="tiempo"></span>
+                        <input type="text" class="tiempo required" name="tiempo" placeholder="TIEMPO">
+                    </div>
+                </div>
+
+                <div class="second-data">
+                    <div class="holder-input half">
+                        <span  class="fecha"></span>
+                        <select  class="half fecha required" placeholder="Tipo de Servicio" name="tipeserv">
+                            <option value="auto" >Auto</option>
+                            <option value="combi" >Combi</option>
+                            <option value="minibus" >Minibus</option>
+                        </select>
+                    </div>
+                    <div class="holder-input half">
+                        <span  class="pasajeros"></span>
+                        <input type="number" class="half required" name="pax" min='1' max='4' placeholder="cantidad de pax">
+                    </div>
+                    <div class="holder-input full">
+                        <span  class="home"></span>
+                        <input type="text" class="full required" placeholder="ORIGEN" id='origen'>
+                    </div>
+
+                    <div class="destinos" id="firstDestiny">
+                        <div class="holder-input full plus">
+                            <span  class="dest"></span>
+                            <input type="text" class="full destino required" id="destino1" placeholder="Destino" name="destino[]">
+                            <div class="icon-plus"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="return">
+                    <span class="return-icon"></span>
+                    <input type="checkbox" name="retorno" >
+                    <small>Con retorno</small>
+                </div>
+            </div>
+
+            <div class="response" id="response">
+                <div class="first-data">
+                    <div class="data-origen">
+                        <div class="img home">
+
+                        </div>
+                        <div class="text">
+                            <span>Origen</span>
+                            <p class="adress0"></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="second-data">
+                    <div class="km section">
+                        <div class="icon"></div>
+                        <div class="text">
+                            <span>cantidad KM</span>
+                            <p id="kmValue"></p>
+                        </div>
+                    </div>
+                    <div class="money section">
+                        <div class="icon"></div>
+                        <div class="text">
+                            <span>valor del servicio</span>
+                            <p>5757</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="response-2" id="responseSecond">
+                <div class="first-data">
+                    <div class="holder-input full pasajeros-inputs">
+                        <span  class="pasajeros"></span>
+                        <input type="text" class="full" name="pasajero[]" placeholder="Nombre del pasajero">
+                    </div>
+                </div>
+                <div class="second-data">
+                    <div class="holder-input half pasajeros-inputs">
+                        <span  class="telf"></span>
+                        <input type="number" class="half" name="telf-contacto" placeholder="Teléfono">
+                    </div>
+                </div>
+            </div>
+            <button class="next">siguiente</button>
+        </form>
+    </div>
+    <div id="map_canvas"></div>
+    <div id="form_reservar">
+    <form action="" name="form_reserva" autocomplete="off" method="post">
+        <input type="hidden" name="Origen" value="Cotizador Online">
+        <div class="input"><input type="text" name="name" placeholder="Nombre y Apellido"></div>
+        <div class="input"><input type="text" name="lugar_origen" placeholder="Lugar de origen"></div>
+        <div class="input"><input type="text" name="lugar_destino" placeholder="Lugar de destino"></div>
+        <div class="input mid"><input type="text" name="fecha" placeholder="Fecha"></div>
+        <div class="input mid"><input type="text" name="hora" placeholder="Hora"></div>
+        <div class="input"><input type="number" name="cantidad_personas" placeholder="Cantidad de Pasajeros"></div>
+        <div class="input"><input type="number" name="telefono" placeholder="Teléfono"></div>
+        <div class="input"><input type="email" name="email" placeholder="E-mail"></div>
+        <div class="input txt"><textarea name="comentario" placeholder="Comentario"></textarea></div>
+        <button>Enviar</button>
+    </form>
+    </div>
+    <script src="mask.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>

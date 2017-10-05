@@ -1,0 +1,218 @@
+.tab-single{
+	width: 35%;
+	float: left;
+	border-radius: 5px 5px 0 0;
+	height: 40px;
+	border:1px solid #909090;
+	background-color:#909090;
+	color: #ffffff;
+	padding-top: 14px;
+	cursor: pointer;
+}
+.tabs .active{
+	border:1px  solid #7c251f;
+
+	height: 40px;
+	background-color:#c7372d;
+	color: #ffffff;
+}
+.tabs{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	top: -40px;
+	left:-1px;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+}
+
+.routes{
+	width: 450px;
+	border:1px solid #7c251f;
+}
+.routes form{
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.routes input,.routes select{
+	background-color: #fff;
+	padding-left: 45px;
+	height: 35px;
+	border:1px solid #7c251f;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 12px;
+
+}
+
+.routes .holder-input{
+	float: left;
+	position: relative;
+	margin-bottom: 12px;
+
+}
+.routes .holder-input span{
+	background-image: url(../img/sprite-cotiza.png);
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.routes .half{
+	width: 45%;
+	margin-right: 5%;
+	border: 1px solid #902a23;
+	border-radius: 5px;
+	height: 35px;
+}
+.routes .half input{
+	width: 100%;
+}
+.routes .full{
+	width: 95%;
+
+}
+.routes .full input{
+	width: 100%;
+}
+.routes .half:nth-child(2n){
+	margin-right: 0;
+}
+.routes .plus input{
+	width: 87%;
+    float: left;
+}
+.routes .destinos .icon-plus{
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin-left: 10px;
+	background-image: url(../img/sprite-cotiza.png);
+	background-repeat: no-repeat;
+    background-position: -250px -46px;
+    cursor: pointer;
+}
+
+.routes .empresa{
+    background-position: 9px 3px;
+}
+.routes .email{
+    background-position: -27px 3px;
+}
+.routes .fecha{
+	 background-position: -64px 3px;
+}
+.routes .tiempo{
+	 background-position: -99px 3px;
+}
+.routes .pasajeros{
+	 background-position: -135px 5px;
+}
+.routes .home{
+	 background-position: -170px 5px;
+}
+.routes .dest{
+	 background-position: -205px 3px;
+}
+.return{
+	float: left;
+	width: 100%;
+
+}
+.return >*{
+	float: left;
+
+}
+.return .return-icon{
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	background-image: url(../img/sprite-cotiza.png);
+	background-repeat: no-repeat;
+    background-position: -244px -4px;
+}
+.return input[type='checkbox']{
+	width: 18px;
+	height: 18px;
+	background-color: #ffffff;
+	float: left;
+}
+.return small{
+	color: #ffffff;
+	float: left;
+	margin-top: 5.5px;
+	margin-left: 5px;
+	font-size: 12px;
+}
+.next{
+	width: 169px;
+	height: 43px;
+	background-color: #fff;
+	border-radius: 15px;
+	color: #c7372d;
+	cursor: pointer;
+	line-height: 43px;
+	display: block;
+	margin:0 auto;
+	text-transform: uppercase;
+	border:1px solid #902a23;
+	font-weight: bold;
+}
+.first-data,.second-data{
+	float: left;
+    width: 100%;
+    margin-bottom: 11px;
+    border-bottom:1px solid #902a23;
+}
+.destinos{
+	    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.routes select.half{
+	width: 100%;
+}
+.ui-datepicker{
+	width: 180px;
+    background-color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+.ui-datepicker-calendar{
+	width: 100%;
+}
+.ui-datepicker-prev{
+	float: left;
+	font-weight: bold;
+	color: #902a23;
+	cursor:pointer;
+	margin-bottom: 10px;
+}
+.ui-datepicker-next{
+	float: right;
+	font-weight: bold;
+	color: #902a23;
+	cursor:pointer;
+	margin-bottom: 10px;
+}
+.ui-datepicker-title{
+	text-align: center;
+}
+.response-2{
+	display: none;
+}
+.telf{
+	background-position: -274px 3px;
+    width: 20px;
+}
+#notClient{
+	display: none;
+}

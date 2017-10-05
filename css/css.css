@@ -1,0 +1,539 @@
+body, html{font-size:79.057%;font-family:'brandon_l', sans-serif;height:100%;width:100%; overflow: hidden;}
+*{box-sizing:border-box;}
+a{color:inherit;transition:all ease 0.3s;-webkit-transition:all ease 0.3s;text-decoration:none}
+strong{font-family:'brandon_b', sans-serif !important;}
+section{position:relative;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-ms-transform:translateZ(0);-o-transform:translateZ(0);transform:translateZ(0);}
+.wp{width:100%;max-width:1230px;margin:auto;position:relative;}
+.wp:after{content:'';display:block;clear:both}
+h1, h2, h3, h4, h5, h6{font-weight:normal}
+
+#cotizador{position:fixed;right:0;top:30%;background:#c7372d;text-align:center;z-index:3;padding:50px 20px 30px;color:#FFF;text-transform:uppercase;max-width:160px;box-shadow:0 0 20px rgba(0,0,0,0.5);transition:all ease 0.3s;-webkit-transition:all ease 0.3s}
+#cotizador img{position:absolute;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);top:-25px}
+#cotizador h2{font-size:2.4em;font-family:'brandon_b', sans-serif}
+#cotizador p{font-size:1.6em;}
+#cotizador i{font-style:normal;font-family:'brandon_b', sans-serif;font-size:6em;position:absolute;left:15px;top:27px;}
+#cotizador i:last-child{left:auto;right:15px;top:43px}
+
+header{position:fixed;z-index:9;width:100%;top:0;padding:10px 20px;transition:background ease 0.3s;-webkit-transition:background ease 0.3s;}
+header .logo{float:left;opacity:0;transition:opacity ease-in 0.3s;-webkit-transition:opacity ease-in 0.3s;}
+header .phone{float:right;font-size:2.1em;color:#FFF;font-family:'brandon_r', sans-serif}
+header .phone img{position:relative;top:5px;margin:0 5px}
+header nav{text-align:center;font-size:1.3em;text-transform:uppercase;letter-spacing:0.03em;color:#FFF;position:absolute;width:100%;left:0}
+header nav a{padding:0 30px;line-height:40px;letter-spacing:0.3em}
+header.fix{background:#c7372d;box-shadow:-3px 0 15px rgba(0,0,0,0.5)}
+header.fix .logo{transition-delay:0.2s;-webkit-transition-delay:0.2s;opacity:1}
+
+#home{height:100%;background:url(../img/bg-trama.jpg);z-index:1}
+#home .copy{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);text-align:center;color:#FFF;padding:30px;background:rgba(0,0,0,0.6)}
+#home .copy .tit{font-size:7.8em;text-transform:uppercase;letter-spacing:0.1em;margin:80px 0 35px}
+#home .copy .tit span{display:block;font-family:'brandon_m', sans-serif;}
+#home h2{font-size:2.5em;max-width:460px;line-height:1.2}
+#home .ver-video{display:block;margin:50px auto 0;font-size:1em;color:#FFF;text-transform:uppercase;letter-spacing:0.3em;width:220px;line-height:30px;border:1px solid #c7372d;border-radius:15px}
+#home .copy i{width:2px;height:400px;background:#932119;left:50%;position:absolute;margin-top:50px;z-index:5}
+
+video#bgVideo {
+    background-size: cover;
+    bottom: 0;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    right: 0;
+    width: auto;
+    z-index: -100;
+	opacity:0.6
+}
+
+#services{background:url(../img/bg-servicios.jpg) no-repeat center 0;height:100%;height:800px;padding:80px 0;}
+#services .wp{height:100%}
+#services .half{width:50%;float:left;padding:0 50px}
+#services .half.right{text-align:right;font-size:3.7em;color:#c7372d;text-transform:uppercase;}
+#services .half.right strong{display:block}
+#services .half p{font-size:2em;color:#3e3e3e;max-width:350px;line-height:1.4}
+#services .half p,
+#services .half h3{transition:all ease-out 1s;-webkit-transition:all ease-out 1s;position:relative;left:0}
+#services .wp-srvs{position:absolute;width:100%;top:50%;left:0;height:150px;transform:translateY(-50%);-webkit-transform:translateY(-50%)}
+#services .wp-srvs a.bx-srv{width:calc(25% - 36px);display:block;float:left;border:3px solid #c7372d;box-shadow:inset 0 0 220px 72px #c7372d;position:relative;height:150px;text-align:center;text-transform:uppercase;line-height:150px;font-size:2.5em;color:#FFF;margin:0 18px;background:#c7372d}
+#services .half.fx p{opacity:0;left:40px;}
+#services .half.fx h3{left:-40px;opacity:0}
+
+#arlo img{display:block}
+#arlo .alquileres{width:50%;float:right;max-width:598px;margin:0 18px;position:relative;box-shadow:0 0 50px 0 rgba(0,0,0,0.2);z-index:0}
+#arlo .alquileres h3{position:absolute;right:85%;top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);color:#FFF;font-size:3.5em;text-transform:uppercase;text-align:right;line-height:1.6;letter-spacing:0.1em}
+#arlo .alquileres h3 span,
+#arlo .alquileres h3 strong{background:#c7372d;padding:0px 10px;margin:2px 0;white-space:nowrap}
+#arlo .alquileres p{font-size:2em;color:#3e3e3e;width:330px;position:absolute;line-height:1.4;letter-spacing:0.03em;text-align:right;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);bottom:-120px}
+#arlo .alquileres a.plus{bottom:-30px;right:40px}
+#arlo .arlotour{float:left;clear:both;width:40%;max-width:470px;position:relative;margin-left:4%;z-index:2}
+#arlo .arlotour h3{position:absolute;right:5%;bottom:-85px;transform:translateY(-50%);-webkit-transform:translateY(-50%);color:#FFF;font-size:3.5em;text-transform:uppercase;text-align:right;line-height:1.6;letter-spacing:0.1em}
+#arlo .arlotour h3 span,
+#arlo .arlotour h3 strong{background:#c7372d;padding:0px 10px;margin:2px 0;white-space:nowrap}
+#arlo .arlotour p{font-size:2em;color:#3e3e3e;position:absolute;line-height:1.4;letter-spacing:0.03em;left:0;bottom:-150px}
+#arlo .arlotour p span{display:block;font-size:1.5em;text-transform:uppercase;line-height:1;margin-top:15px}
+#arlo .arlotour p strong{display:block}
+#arlo .arlotour a.plus{bottom:-30px;left:20px;z-index:2}
+#arlo .clubarloeyx{width:50%;float:right;max-width:598px;margin:0 18px;box-shadow:15px 15px 50px 0 rgba(0,0,0,0.2);clear:both;position:relative;z-index:2;background:#FFF;height:350px}
+#arlo .clubarloeyx img.tarjeta{width:55%;max-width:354px;position:absolute;right:-50px;top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);filter: drop-shadow(10px 20px 25px rgba(0,0,0,0.3));-webkit-filter: drop-shadow(10px 20px 25px rgba(0,0,0,0.3));}
+#arlo .clubarloeyx .copy{position:absolute;top:50%;left:5%;transform:translateY(-50%);-webkit-transform:translateY(-50%)}
+#arlo .clubarloeyx h3{font-size:4em;color:#c7372d;text-transform:uppercase;line-height:1;margin:5px 0}
+#arlo .clubarloeyx strong{display:block}
+#arlo .clubarloeyx p{font-size:2em;color:#3e3e3e;line-height:1.1;}
+#arlo .clubarloeyx a{color:#c7372d;text-transform:uppercase;font-size:1.3em;text-decoration:underline;margin-top:20px;display:block;}
+#arlo .border-red{max-width:700px;width:60%;border:2px solid rgba(199, 55, 45, 0.4);position:absolute;height:60%;z-index:1;top:25%}
+#arlo a.plus{width:60px;height:60px;border-radius:60px;background:#FFF;position:absolute;display:block;box-shadow:0 0 30px 0 rgba(0,0,0,0.3);}
+#arlo a.plus i{width:2px;border-radius:2px;background:#c7372d;height:20px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%)}
+#arlo a.plus i:last-child{transform:rotate(90deg);-webkit-transform:rotate(90deg);margin:-10px 0 0 -1px}
+
+#arlo .alquileres,
+#arlo .arlotour,
+#arlo .clubarloeyx{top:0}
+
+#footer{background:#dfdfdf;margin-top:100px}
+#footer .wp{z-index:1;padding-bottom:50px}
+#footer .bg-autos{height:502px;background:url(../img/bg-footer-autos.png) no-repeat center;position:absolute;z-index:0;top:-97px;width:100%}
+#footer .sign{position:relative;padding:40px;background:#c7372d;font-size:4em;line-height:1;color:#FFF;text-transform:uppercase;width:485px;top:-37px}
+#footer .sign img{position:absolute;top:0;left:-31px;}
+#footer p{font-size:2em;color:#393535;line-height:1}
+#footer p strong{display:block}
+#footer form{margin-top:20px;}
+#footer .input{width:calc(33.33% - 18px);margin:9px 18px 9px 0;float:left;height:70px;border-radius:2px;background:rgba(255,255,255,0.8)}
+#footer .input.mid{width:calc(16.66% - 18px);}
+#footer .input.txt{height:158px;float:right}
+#footer input,
+#footer textarea{display:block;width:100%;-webkit-appearance:none;outline:none;background:none;height:100%;border:none;padding:15px;font-size:2em;font-family:'brandon_l';resize:none;color:#393535}
+#footer button{display:block;-webkit-appearance:none;outline:none;width:25%;float:right;height:50px;background:#c7372d;border-radius:30px;line-height:50px;text-align:center;text-transform:uppercase;color:#FFF;cursor:pointer;border:1px solid #c7372d;margin:40px 4% 0;font-size:1.5em;letter-spacing:0.2em;transition:all ease 0.3s;-webkit-transition:all ease 0.3s}
+#footer .input.error input{box-shadow:0 0 5px rgba(255,0,4,0.7)}
+#footer .box-phone{border:2px solid #c7372d;float:left;margin-top:30px;padding:20px 30px;width:31.5%;color:#c7372d;overflow:hidden}
+#footer .box-phone img,
+#footer .box-phone p{float:left;color:#c7372d;line-height:1.2}
+#footer .box-phone img{position:relative;margin-right:10px;top:-2px}
+#footer .box-phone strong{margin:10px 0}
+#footer .box-phone strong:last-child{font-size:1.5em}
+
+footer{background:#dfdfdf;border-top:1px solid #adadad;padding:35px 0;text-align:center;color:#393535;font-size:1.3em;line-height:1.1}
+footer a{font-family:'brandon_m';text-decoration:underline;}
+footer img{margin-right:20px}
+
+.msg{background:#c7372d;font-size:1.5em;color:#FFF;padding:10px 15px;text-align:center;position:absolute;bottom:40%;left:50%;transform:translateX(-50%);-moz-transform:translateX(-50%);-webkit-transform:translateX(-50%);display:none}
+
+/*servicios*/
+#header{height:100%;max-height:680px;background-size:cover !important}
+#header .wp{height:100%}
+#header .box-info{background:#c7372d;padding:60px 40px;color:#FFF;position:absolute;bottom:50px;left:0;box-shadow:0 0 30px rgba(0,0,0,0.7)}
+#header .box-info img,
+#header .box-info h3{float:left;}
+#header .box-info h3{font-size:6em;letter-spacing:-0.03em;font-family:'brandon_b', sans-serif;margin-left:20px}
+#header .box-info h2{clear:both;font-size:3.5em;padding:30px 0;text-transform:uppercase;font-family:'brandon_b', sans-serif;max-width:220px;}
+#header .box-info p{font-size:1.8em;max-width:220px;line-height:1.2;clear:both}
+#header .box-info h4{text-transform:uppercase;font-family:'brandon_b', sans-serif;float:left;width:50%;font-size:2.5em;margin-bottom:20px}
+#header .box-info h4 div{font-size:0.9em;margin-bottom:5px}
+#header.remises{background:url(../img/header-remises.jpg) no-repeat center top;}
+#header.combis{background:url(../img/header-combis.jpg) no-repeat center top;}
+#header.buses{background:url(../img/header-buses.jpg) no-repeat center top;}
+#header.fletes{background:url(../img/header-fletes.jpg) no-repeat center top;}
+#flota:after{content:'';display:block;clear:both;height:50px}
+#flota .gama{width:50%;float:left;position:relative;overflow:hidden;background:#c7372d}
+#flota .gama > img{display:block;width:100%;transition:all ease-out 1.5s;-transition:all ease-out 1.5s}
+#flota .gama .copy{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);color:#FFF;font-size:5em;text-align:center;text-transform:uppercase}
+#flota .gama .copy strong{display:block;margin-bottom:10px}
+#flota .gama .copy img{-webkit-filter:drop-shadow(0px 0px 15px #FFF);filter:drop-shadow(0px 0px 15px #FFF);}
+#flota .gama .copy span{font-size:0.5em;display:block;opacity:0.65;}
+
+#popUpFletes{position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);width:100%;height:100%;z-index:99;display:none}
+#popUpFletes .copy{position:absolute;max-width:500px;width:100%;padding:30px;background:#FFF;box-shadow:0 0 20px #000;top:50%;left:50%;border-radius:10px;text-align:center;display:none;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%)}
+#popUpFletes .copy h2{text-transform:uppercase;font-family:'brandon_b', sans-serif;font-size:3em;color:#c7372d;margin-bottom:20px}
+#popUpFletes .copy p{font-size:1.8em;line-height:1.2;}
+#popUpFletes .copy .carga_max{padding:20px 0 20px 80px;background:url(../img/i_kg.png) no-repeat left center;background-size:60px;font-family:'brandon_b', sans-serif;font-size:2em;text-align:left;max-width:300px;margin:20px auto}
+#popUpFletes .copy .carga_max h3{text-transform:uppercase;color:#c7372d;margin-bottom:5px}
+#popUpFletes .copy a.bt_sol{display:block;width:180px;margin:auto;height:40px;background:#c7372d;border-radius:20px;line-height:40px;text-align:center;text-transform:uppercase;color:#FFF;cursor:pointer;border:1px solid #c7372d;font-size:1.5em;letter-spacing:0.2em;transition:all ease 0.3s;-webkit-transition:all ease 0.3s}
+
+#header.srv{max-height:480px;margin-bottom:80px}
+#header.remises-eco{background:url(../img/header-remises-eco.jpg) no-repeat center top;}
+#header.remises-vans{background:url(../img/header-remises-vans.jpg) no-repeat center top;}
+#header.srv .box-info{min-width:50%;bottom:-50px;padding:40px}
+#header.srv .box-info .tit{float:left;margin:0 30px}
+#header.srv .box-info .tit span{font-size:3.5em;text-transform:uppercase}
+#header.srv .box-info h2{padding:0}
+#header.srv .box-info p{float:left;}
+
+#flota .vehicle{float:left;width:50%;position:relative;padding:0 20px;margin:30px 0}
+#flota .vehicle img{max-width:500px;display:block;margin:auto;width:100%}
+#flota .vehicle h4{font-size:3.5em;color:#c6362d;text-transform:uppercase;margin-top:20px}
+#flota .vehicle h4 strong{display:block}
+#flota .vehicle span{font-size:1.2em;letter-spacing:0.3em;color:#c7372d;display:block;width:30%;text-transform:uppercase;line-height:30px;border:1px solid #c7372d;border-radius:16px;position:absolute;left:33%;bottom:20px;text-align:center;font-family:'brandon_m';transition:all ease 0.3s;-webkit-transition:all ease 0.3s;}
+#flota .vehicle i{width:0;height:0;opacity:1;position:absolute;left:50%;top:50%;border-radius:100%;z-index:-1;transition:all ease-out 0.3s;-webkit-transition:all ease-out 0.3s;}
+
+#headerV{height:auto;background:#d8d9d9}
+#headerV .titulo{position:absolute;top:100px;text-align:right;font-size:5em;color:#c7372d;z-index:2;right:0;text-transform:uppercase}
+#headerV .titulo strong{display:block}
+#headerV img{display:block;margin:auto;max-width:1109px;width:100%}
+#banner-detalle{height:450px;background-repeat:no-repeat;background-position:center 0;}
+#banner-detalle .wp{height:100%;}
+#banner-detalle h4{font-size:5em;text-transform:uppercase;position:absolute;bottom:30px;color:#FFF;}
+#banner-detalle h4 strong{display:block}
+#banner-detalle.viano{background-image:url(../img/v_viano-banner.jpg)}
+#banner-detalle.h1{background-image:url(../img/v_h1-banner.jpg)}
+#banner-detalle.cobalt{background-image:url(../img/v_cobalt-banner.jpg)}
+#banner-detalle.corolla{background-image:url(../img/v_corolla-banner.jpg)}
+#banner-detalle.focus{background-image:url(../img/v_focus-banner.jpg)}
+#banner-detalle.bora{background-image:url(../img/v_bora-banner.jpg)}
+#banner-detalle.logan{background-image:url(../img/v_logan-banner.jpg)}
+#banner-detalle.voyage{background-image:url(../img/v_voyage-banner.jpg)}
+#banner-detalle.kangoo{background-image:url(../img/v_kangoo-banner.jpg)}
+#banner-detalle.suran{background-image:url(../img/v_suran-banner.jpg)}
+#banner-detalle.cruze{background-image:url(../img/v_cruze-banner.jpg)}
+#banner-detalle.fluence{background-image:url(../img/v_fluence-banner.jpg)}
+#banner-detalle.vento{background-image:url(../img/v_vento-banner.jpg)}
+#banner-detalle.claseS{background-image:url(../img/v_claseS-banner.jpg)}
+#banner-detalle.claseC{background-image:url(../img/v_claseC-banner.jpg)}
+#banner-detalle.claseE{background-image:url(../img/v_claseE-banner.jpg)}
+#banner-detalle.sprinter15{background-image:url(../img/v_sprinter15-banner.jpg)}
+#banner-detalle.sprinter19{background-image:url(../img/v_sprinter19-banner.jpg)}
+#banner-detalle.sprinter24{background-image:url(../img/v_sprinter24-banner.jpg)}
+#banner-detalle.marcopolo{background-image:url(../img/v_marcopolo-banner.jpg)}
+
+#detalle{padding:50px 0;min-height:550px}
+#detalle .wp-icops{width:250px;float:left;}
+#detalle .wp-interior{width:calc(100% - 250px);float:left;}
+#detalle .border-red{max-width:620px;width:90%;border:2px solid rgba(199, 55, 45, 0.4);position:absolute;height:350px;z-index:0;top:1500px;right:150px;}
+#detalle .wp-interior img{position:relative;float:right;top:50px;box-shadow:0 0 20px rgba(0,0,0,0.4);display:block;margin-right:100px}
+#detalle .ico-ps,
+#header.buses .ico-ps{width:80px;height:80px;border-radius:100%;background-color:#c7372d;margin:5px;float:left;background-size:cover;position:relative;transition:all ease-out 0.2s;-webkit-transition:all ease-out 0.2s}
+#detalle .ico-ps strong,
+#header.buses .ico-ps strong{font-size:1.5em;color:#FFF;position:absolute;}
+#detalle .ico-ps.pasajeros strong,
+#header.buses .ico-ps.pasajeros strong{top:16px;right:27px}
+#detalle .ico-ps.valijas strong,
+#header.buses .ico-ps.valijas strong{top:16px;left:20px}
+#detalle .ico-ps.airbag,
+#header.buses .ico-ps.airbag{background-image:url(../img/i_airbag.png);}
+#detalle .ico-ps.aire,
+#header.buses .ico-ps.aire{background-image:url(../img/i_aire-calefaccion.png);}
+#detalle .ico-ps.lengua,
+#header.buses .ico-ps.lengua{background-image:url(../img/i_bilingue.png);}
+#detalle .ico-ps.abs,
+#header.buses .ico-ps.abs{background-image:url(../img/i_frenosABS.png);}
+#detalle .ico-ps.pasajeros,
+#header.buses .ico-ps.pasajeros{background-image:url(../img/i_pasajeros.png);}
+#detalle .ico-ps.valijas,
+#header.buses .ico-ps.valijas{background-image:url(../img/i_valijas.png)}
+#detalle .ico-ps.satelital,
+#header.buses .ico-ps.satelital{background-image:url(../img/i_satelital.png);}
+#detalle .ico-ps.wifi,
+#header.buses .ico-ps.wifi{background-image:url(../img/i_wifi.png);}
+#header.buses .ico-ps.bodega{background-image:url(../img/i_bodega.png);}
+
+#header.buses .wp-icops{position:absolute;right:0;bottom:30px}
+
+#video{position:fixed;top:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:999;left:0;display:none}
+#video video{width:90%;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%)}
+
+#form_contacto{position:fixed;width:100%;height:100%;left:0;top:0;z-index:999;display:none}
+#form_contacto i{width:100%;height:100%;background:rgba(0,0,0,0.8);position:absolute;top:0;left:0;}
+#form_contacto .form-contacto{width:480px;padding:20px;background:#dfdfdf;position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%)}
+#form_contacto .input{width:100%;margin:10px 0;height:50px;border-radius:2px;background:rgba(255,255,255,0.8)}
+#form_contacto .input.txt{height:150px;}
+#form_contacto input,
+#form_contacto textarea{display:block;width:100%;-webkit-appearance:none;outline:none;background:none;height:100%;border:none;padding:15px;font-size:2em;font-family:'brandon_l';resize:none;color:#393535}
+#form_contacto button{display:block;-webkit-appearance:none;outline:none;width:50%;height:50px;background:#c7372d;border-radius:30px;line-height:48px;text-align:center;text-transform:uppercase;color:#FFF;cursor:pointer;border:1px solid #c7372d;margin:40px auto 0;font-size:1.5em;letter-spacing:0.2em;transition:all ease 0.3s;-webkit-transition:all ease 0.3s}
+#form_contacto .input.error input{box-shadow:0 0 5px rgba(255,0,4,0.7)}
+
+@media (min-width:1100px){
+	header nav a:hover{color:#000}
+	#home .ver-video:hover{background:#c7372d}
+	#cotizador:hover{box-shadow:0 0 20px rgba(0,0,0,0.5), inset 0 0 50px rgba(0,0,0,0.3)}
+	#services .wp-srvs a.bx-srv:hover{box-shadow:inset 0 0 0 #c7372d;color:#c7372d;background:none}
+	#arlo a.plus:hover{transform:rotate(180deg);-webkit-transform:rotate(180deg)}
+	#form_contacto button:hover,
+	#footer button:hover,
+	#popUpFletes .copy a.bt_sol:hover{background:none;color:#c7372d}
+	#flota .gama:hover > img{transform:scale(1.2);-webkit-transform:scale(1.2);opacity:0.3}
+	#flota .vehicle:hover i{background:#f4f4f4;width:400px;height:400px;opacity:1;left:0;top:0}
+	#flota .vehicle:hover span{background:#c7372d;color:#FFF}
+	#volver:hover{background:#c7372d;color:#FFF}
+	#volver:hover > i{border-color:#FFF;left:15px}
+	#detalle .ico-ps:hover{box-shadow:inset 0 0 40px rgba(0,0,0,0.4)}
+}
+@media (max-width:1310px){
+	#arlo .clubarloeyx img.tarjeta{right:-18px}
+	header nav a {padding: 0 10px;}
+}
+@media (max-width:1000px){
+	header{background:#c7372d;box-shadow: -3px 0 15px rgba(0,0,0,0.5);padding:5px 20px}
+	header .logo{opacity:1;}
+	header:before{content:'';width:40px;height:40px;background:url(../img/menu-mobile.png) no-repeat top center;position:absolute;right:10px;top:5px;z-index:9;background-size:40px auto}
+	header.open:before{background-position:bottom center}
+	header .phone{font-size:0;float:none;position:absolute;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);top:3px;width:100%;text-align:center}
+	header .phone strong{font-size:1.8rem}	
+	header nav{position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.9);top:0;left:0;z-index:8;padding-top:50px;font-size:1em;display:none}
+	header nav a{display:block;float:none;margin:0;line-height:50px;font-size:2em;font-family:'brandon_b', sans-serif;}
+	header nav a:nth-child(4){border-bottom:1px solid #303030}
+	#cotizador{position:relative;top:0;margin:55px auto;max-width:280px;font-size:1em;padding-bottom:10px}
+	#cotizador h2{font-size:4.5em;line-height:0.9}
+	#cotizador p{font-family:'brandon_l', sans-serif;}
+	#cotizador i{font-size:11em;left:23px;top:38px;}
+	#cotizador i:last-child{right:20px;top:67px}
+	
+	#services .wp-srvs a.bx-srv{width:calc(25% - 20px);margin:0 10px;height:120px;line-height:120px}
+	
+	#arlo .arlotour h3{bottom:-145px}
+	#arlo .arlotour p{bottom:-226px}
+	#arlo .alquileres a.plus{bottom:-5px}
+	
+	#footer .bg-autos{display:none}
+	#footer .sign{width:100%;text-align:center;padding:40px}
+	#footer .sign strong{display:block}
+	#footer .sign img{display:none}
+	#footer p{text-align:center}
+	#footer .input:not(mid){width:calc(50% - 20px);margin:10px;}
+	#footer .input.mid{width:calc(25% - 20px);margin:10px;}
+	#footer .input.txt{height:160px}
+	#footer button{width:40%;margin:20px 5%}
+	#footer .box-phone{max-width:300px;width:100%;margin:20px auto;text-align:center;float:none;position:relative;top:30px}
+	#footer .box-phone strong{font-size:1.2em;line-height:0.9;}
+	
+	#header{height:500px}
+	#header .box-info{padding:40px;left:20px;bottom:20px}
+	#header .box-info p{display:none}
+	#header .box-info h2{padding:10px 0 0}
+	#flota .vehicle span{width:70%;left:15%;background:#c7372d;color:#FFF}
+	#flota .gama .copy{font-size:4em;width:100%}
+	#flota .gama .copy strong{margin-bottom:5px}
+	#flota .vehicle h4{font-size:3em}
+	#detalle{padding:20px}
+	#detalle .wp-icops{float:none;width:100%;padding-bottom:10px;overflow:hidden}
+	#detalle .border-red{display:none}
+	#detalle .wp-interior{float:none;width:100%;padding-top:30px}
+	#detalle .wp-interior img{position:static;max-width:600px;width:100%;float:none;display:block;margin:auto}
+	#banner-detalle h4{left:20px}
+	#banner-detalle{height:350px}
+	#headerV .titulo{right:20px;top:80px}
+	#header.buses .wp-icops{top:60px;bottom:auto}
+	#detalle .ico-ps, #header.buses .ico-ps{width:75px;height:75px}
+}
+@media (max-width:600px){
+	header .logo{overflow:hidden;width:45px}
+	#home{background-image:url(../img/bg-home-mob.jpg)}
+	#home .copy{width:90%}
+	#home .copy .tit{font-size:4.5em;margin:20px 0}
+	#home .copy h1 img{width:150px}
+	#home .ver-video{margin-top:25px}
+	#home h2{font-size:1.8em}
+	#home .copy i{display:none}
+	#services{background-image:url(../img/bg-servicios-mob.jpg);padding:40px 0}
+	#services .half{width:100%;text-align:center !important;float:none;padding:10px 20px}
+	#services .wp-srvs{height:auto}
+	#services .wp-srvs a.bx-srv{width:calc(50% - 20px);margin:10px;height:100px;line-height:100px;}
+	
+	#arlo .alquileres,
+	#arlo .arlotour,
+	#arlo .clubarloeyx{float:none;width:100%;margin:0 0 20px 0;padding:0 10px;box-shadow:none}
+	#arlo .alquileres a.plus{top:-20px;right:20px}
+	#arlo .alquileres h3,
+	#arlo .alquileres p,
+	#arlo .arlotour h3,
+	#arlo .arlotour p{position:static;}
+	#arlo .alquileres h3,
+	#arlo .arlotour h3{font-size:3em}
+	#arlo .alquileres p{transform:translate(0,-50%);-webkit-transform:translate(0,-50%);width:100%;margin:0}
+	#arlo .border-red{display:none}
+	#arlo .arlotour a.plus{top:-20px}
+	#arlo .arlotour p span{font-size:1.2em}
+	#arlo .clubarloeyx{position:static;height:180px}
+	#arlo .clubarloeyx img.tarjeta{position:static;transform:translate(0,-130%);-webkit-transform:translate(0%,-130%);max-width:195px;width:100%;float:right}
+	#arlo .clubarloeyx .copy{position:static;clear:both;transform:translateY(-100%);-webkit-transform:translateY(-100%);}
+	
+	#header.remises{background-image:url(../img/mob-header-remises.jpg);}
+	#header.remises-eco{background:url(../img/mob-header-remises-eco.jpg) no-repeat center top;}
+	#header.remises-vans{background:url(../img/mob-header-remises-vans.jpg) no-repeat center top;}
+	#header.combis{background:url(../img/mob-header-combis.jpg) no-repeat center top;}
+	#header.buses{background:url(../img/mob-header-buses.jpg) no-repeat center top;}
+	#header.fletes{background:url(../img/mob-header-fletes.jpg) no-repeat center top;}
+	
+	#footer .sign{padding:20px 5px;font-size:2.5em;line-height:1.15;}
+	#footer .input:not(mid){width:calc(100% - 20px);margin:5px 10px}
+	#footer .input.mid{width:calc(50% - 20px)}
+	#footer button{width:calc(100% - 20px);margin:20px 10px}
+	footer{font-size:0;padding:20px 0}
+	footer img{margin:0}
+	
+	#header{height:100%;max-height:600px}
+	#header.srv .box-info,
+	#header .box-info{padding:20px;width:calc(100% - 40px);bottom:20px}
+	#header .box-info h4{display:none}
+	
+	#flota .gama{width:100%;}
+	#flota .gama .copy{font-size:3em}
+	#flota .gama .copy img{width:25px}
+	
+	#header.srv{margin-bottom:0px}
+	#header.srv .box-info .tit{margin:0 0 0 15px}
+	#header.srv .box-info .tit span,
+	#header.srv .box-info .tit h2{font-size:2.5em}
+	
+	#flota .vehicle{width:100%}
+	#headerV .titulo{position:relative;font-size:3.2em;top:60px;padding:0 20px 0 0;right:auto;left:auto}
+	#headerV img{margin-top:20px}
+	#banner-detalle h4{font-size:3.3em}
+	#banner-detalle{height:200px;background:url(../img/mob-bg-banner.jpg) !important}
+	#detalle{min-height:0}
+	#detalle .wp-icops{text-align:center;padding-bottom:0}
+	#detalle .ico-ps,
+	#header.buses .ico-ps{display:inline-block;width:45px;height:45px;float:none;margin:3px}
+	#header.buses .wp-icops{width:110px}
+	#popUpFletes .copy{width:90%;padding:20px}
+	
+}
+.response{
+    display:none;
+    text-transform: uppercase;
+    color:#ffffff;
+}
+.response span{
+    display: block;
+    font-size: 11px;
+    margin-bottom: 5px;
+
+}
+.response p{
+    font-size: 14px;
+}
+.response .section{
+    width: 50%;
+    float:left;
+}
+.response .section p{
+    display:block;
+    font-size: 43px;
+}
+.response .data-origen .img {
+    float:left;
+    margin-right: 10px;
+}
+.response .data-origen{
+    width: 100%;
+    margin-bottom: 5px;
+    float:left;
+}
+.response .data-origen .text{
+    float: left;
+    width: calc(100% - 65px);
+    margin-right: 10px;
+}
+.response .data-origen .img{
+    background-image: url(../img/sprite-cotiza.png);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+}
+.response .data-origen .home{
+        background-position: -142px -46px;
+}
+.response .data-origen .destiny{
+        background-position: -175px -47px;
+}
+.response .section .icon{
+      background-image: url(../img/sprite-cotiza.png);
+    float: left;
+    width: 58px;
+    height: 58px;
+}
+.response .section .text{
+    float:left;
+}
+.money .icon{
+    background-position: -82px -36px;
+}
+.km .icon{
+    background-position: 9px -31px;
+}
+.response .second-data{
+    padding: 15px 0;
+}
+.second-data,.response-2 .first-data{
+    overflow-y: scroll;
+    height: 300px;
+    position: relative;
+
+}
+.response-2 .second-data{
+    height: auto;
+    overflow: hidden;
+}
+/*NEW ITEMS*/
+        #map_canvas{width:100%;height:100%;}
+        .routes{position:absolute;top:25%;left:5%;z-index:3;background:#c7372d;padding:20px;}
+        /*.routes input,
+        .routes select{display:block;width:280px;height:40px;border:1px solid #c7372d;padding:0 10px;-webkit-appearance:none;outline:none;font-family: 'brandon_l';font-size:1.2em;text-transform:uppercase;background:none}
+        .routes select{border-radius:5px 5px 0 0;border-bottom:none;}*/
+
+        .routes #end{border-radius:0 0 5px 5px;border-top:none;}
+        .routes h3{font-size:2em;color:#ffffff;font-family:'brandon_b', sans-serif;text-transform:uppercase;margin-bottom:20px}
+/*      .routes button{display:block;-webkit-appearance:none;outline:none;width:100%;height:40px;background:#c7372d;border-radius:5px;line-height:40px;text-align:center;text-transform:uppercase;color:#FFF;cursor:pointer;border:1px solid #c7372d;font-size:1.3em;letter-spacing:0.1em;transition:all ease 0.3s;-webkit-transition:all ease 0.3s;margin-top:15px;padding:0}*/
+        .routes .result{background-size:35px;position:absolute;width:100%;min-height:100%;z-index:99;top:0;left:0;color:#FFF;padding:20px 10px;display:none}
+        .routes .result.bgResult{background:#c7372d;}
+        .routes .result *{display:none}
+        .routes .result div{font-size:1.3em;text-transform:uppercase;font-family:'brandon_b', sans-serif;padding:0 5px;}
+        .routes .result div span{display:block;margin:5px 0;font-family:'brandon_l', sans-serif;font-size:1.1em}
+        .routes .result div.kms,
+        .routes .result div.valor{float:left;width:50%;margin:10px 0}
+        .routes .result div.kms span,
+        .routes .result div.valor span{font-size:2.5em}
+        .routes .result div.valor{text-align:right;}
+        .routes .result a{clear:both;display:block;max-width:180px;margin:10px auto;text-transform:uppercase;font-size:1.3em;text-align:center;line-height:30px;background:#FFF;color:#C7372D;box-shadow:0 0 10px rgba(0,0,0,0.5);border-radius:15px}
+        .routes .result a:hover{background:#C7372D;color:#FFF;}
+        #reset{display:block;cursor:pointer;text-align:center;}
+        #form_reservar{position:absolute;background:rgba(0,0,0,0.7);width:100%;height:100%;z-index:999;top:0;left:0;display:none}
+        #form_reservar form{max-width:480px;width:100%;padding:15px;border-radius:10px;border:#e3e3e3;background:#dFdFdF;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);}
+        #form_reservar .input{width:calc(50% - 10px);margin:5px;float:left;height:40px;border-radius:2px;background:rgba(255,255,255,0.8);}
+        #form_reservar .input.error input,
+        #form_reservar .input.error textarea{border:1px solid #c7372d}
+        #form_reservar .input.txt{width:calc(100% - 10px);clear:both;height:100px;margin-bottom:20px}
+/*      #form_reservar button {
+            display: block;
+            -webkit-appearance: none;
+            outline: none;
+            width: 50%;
+            min-width:160px;    
+            height: 40px;
+            background: #c7372d;
+            border-radius: 30px;
+            line-height: 35px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFF;
+            cursor: pointer;
+            border: 1px solid #c7372d;
+            margin: 20px auto 0;
+            font-size: 1.5em;
+            letter-spacing: 0.2em;
+            transition: all ease 0.3s;
+            -webkit-transition: all ease 0.3s;
+            clear:both;
+        }*/
+        #form_reservar input, #form_reservar textarea {
+            display: block;
+            width: 100%;
+            -webkit-appearance: none;
+            outline: none;
+            background: none;
+            height: 100%;
+            border: none;
+            padding: 10px;
+            font-size: 1.6em;
+            font-family: 'brandon_l';
+            resize: none;
+            color: #393535;
+        }
+        @media (max-width:760px){
+            .routes{top:0;left:0;padding:15px 20px;width:100%}
+            .routes h3{font-size:1.3em;margin-bottom:10px;text-align:center}
+            .routes input, .routes select{height:35px;width:100%}
+        /*  .routes button{height:35px;line-height:35px;width:80%;left:10%;bottom:15px;position:fixed}*/
+            #arrow{width:35px;height:35px;border:1px solid #C7372D;background:rgba(0,0,0,0.6);color:#FFF;font-size:3em;position:fixed;right:5px;top:5px;border-radius:100%;z-index:99}
+            #arrow:after{content:'>';position:absolute;left:6px;top:0;transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);}
+            #arrow.h:after{transform:rotate(90deg);-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);left:12px;top:2px;}
+            #form_reservar{overflow:scroll}
+            #form_reservar form{transform:translate(0);-webkit-transform: translate(0);width:90%;margin:40px 5%;padding:10px;position:static}
+            #form_reservar .input{width:calc(100% - 10px);}
+        }
